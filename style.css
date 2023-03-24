@@ -1,0 +1,156 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  width: 65%;
+  height: 85vh;
+  border: 1px solid black;
+  margin: auto;
+  transition: 0.3s linear;
+}
+
+header nav {
+  width: 100%;
+  height: 7%;
+  margin: 5px auto;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav .right-bx {
+  display: flex;
+  align-items: center;
+}
+
+header nav .right-bx ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+header nav .right-bx ul li {
+  padding: 3px 15px;
+}
+
+header nav .right-bx ul li:nth-last-child(1) {
+  border: 1px solid gray;
+  border-radius: 20px;
+  padding: 3px 20px;
+}
+
+header nav .right-bx ul li:nth-last-child(1) a {
+  color: black;
+}
+
+header nav .right-bx ul li:nth-last-child(1) a:hover {
+  color: gray;
+}
+
+header nav .right-bx ul li a {
+  text-decoration: none;
+  color: gray;
+  font-size: 11px;
+  font-weight: 500;
+  transition: 0.3s linear;
+}
+
+header nav .right-bx ul li a:hover {
+  color: black;
+}
+
+header nav .right-bx .account-bx {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+header nav .right-bx .account-bx .bi {
+  margin-left: 15px;
+  color: gray;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+
+header nav .right-bx .account-bx .bi:hover {
+  color: black;
+}
+
+header .content {
+  position: relative;
+  width: 100%;
+  height: 93%;
+  border: 1px solid black;
+  z-index: 5;
+}
+
+header .content::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  background: url(img/bg.png) no-repeat center/cover;
+  background-position-y: 0px;
+  transform: scaleX(-1);
+  border-radius: 20px;
+  z-index: -1;
+}
+
+header .content .cont-bx {
+  width: 500px;
+  height: auto;
+  color: black;
+  padding: 50px;
+  border: 1px solid black;
+}
+
+header .content .cont-bx h1 {
+  font-size: 55px;
+  line-height: 60px;
+  font-weight: 600;
+}
+
+header .content .cont-bx p {
+  font-size: 13px;
+  font-weight: 400;
+  color: rgb(100, 100, 100);
+  margin-top: 10px;
+}
+
+header .content .cont-bx .weather {
+  margin-top: 80px;
+}
+
+header .content .cont-bx .weather h6 {
+  color: rgb(64, 64, 64);
+  font-size: 10px;
+  font-weight: 600;
+}
+
+header .content .cont-bx .weather h6 span {
+  margin-left: 5px;
+}
+
+header .content .cont-bx .btns-cont {
+  margin-top: 10px;
+}
+
+header .content .cont-bx .btns-cont i {
+  border: 1px solid gray;
+  padding: 0 3.3px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+
+header .content .cont-bx .btns-cont i:hover {
+  color: black;
+  background: rgb(0, 0, 0, 0.1);
+}
