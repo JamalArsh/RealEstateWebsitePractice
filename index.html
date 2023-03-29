@@ -13,6 +13,7 @@
       @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,500&display=swap");
     </style>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
   </head>
   <body>
     <header>
@@ -43,8 +44,8 @@
             <h6>42 C <span>Very Hot</span></h6>
           </div>
           <div class="btns-cont">
-            <i class="bi bi-arrow-left"></i>
-            <i class="bi bi-arrow-right"></i>
+            <i class="bi bi-arrow-left" id="btn-left"></i>
+            <i class="bi bi-arrow-right" id="btn-right"></i>
           </div>
 
           <div class="img-bx">
@@ -59,7 +60,7 @@
             </div>
             <div class="card">
               <img src="img/Random Inspiration 335.jpg" alt="" />
-              <h6>+6</h6>
+              <h6 id="h6">+6</h6>
             </div>
           </div>
         </div>
@@ -85,28 +86,133 @@
               <div class="left-bx">
                 <h5>CHECK IN</h5>
                 <div class="date">
-                  <h3>Sat, 05 Jan</h3>
-                  <input type="date" name="" id="checkin" value="2022-01.11" />
+                  <h3 id="checkin-data">Sat, 05 Jan</h3>
+                  <input type="date" name="" id="checkin" value="2022-01-11" />
                   <i class="bi bi-calendar-minus-fill"></i>
                 </div>
-                <button>Less</button>
-                <button>More</button>
+                <button id="checkin-less">Less</button>
+                <button id="checkin-more">More</button>
               </div>
               <div class="right-bx">
                 <h5>CHECK OUT</h5>
                 <div class="date">
-                  <h3>Sun, 06 Jan</h3>
-                  <input type="date" name="" id="checkin" value="2022-01.11" />
+                  <h3 id="checkout-data">Sun, 06 Jan</h3>
+                  <input type="date" name="" id="checkout" value="2022-01-11" />
                   <i class="bi bi-calendar-minus-fill"></i>
                 </div>
-                <button>Less</button>
-                <button>More</button>
+                <button id="checkout-less">Less</button>
+                <button id="checkout-more">More</button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </header>
+    <div class="map">
+      <div class="address-bx">
+        <div class="location-bx">
+          <h6>Location</h6>
+          <h4>Sharja House</h4>
+        </div>
+        <i class="bi bi-fullscreen-exit"></i>
+      </div>
+      <iframe
+        src="https://my.atlistmaps.com/map/42f1c12d-06ef-46e4-b35f-ff0db83ade2a?share=true"
+        allow="geolocation 'self' https://my.atlistmaps.com"
+        width="100%"
+        height="400px"
+        frameborder="0"
+        scrolling="no"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <div class="home">
+      <div class="title-btn">
+        <h2>Explore more houses</h2>
+        <button>See All <i class="bi bi-arrow-right"></i></button>
+      </div>
+      <div class="home-bx">
+        <div class="card">
+          <img src="img/An outdoor pool.jpg" alt="" />
+          <div class="content">
+            <i class="bi bi-balloon-heart"></i>
+            <div class="cont">
+              <h4>Dubai</h4>
+              <p>United Arab Emirates</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/An outdoor pool.jpg" alt="" />
+          <div class="content">
+            <i class="bi bi-balloon-heart"></i>
+            <div class="cont">
+              <h4>Abu Dhabi</h4>
+              <p>United Arab Emirates</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/An outdoor pool.jpg" alt="" />
+          <div class="content">
+            <i class="bi bi-balloon-heart"></i>
+            <div class="cont">
+              <h4>Ros Al-Khalmah</h4>
+              <p>United Arab Emirates</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/An outdoor pool.jpg" alt="" />
+          <div class="content">
+            <i class="bi bi-balloon-heart"></i>
+            <div class="cont">
+              <h4>Zayed City</h4>
+              <p>United Arab Emirates</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/An outdoor pool.jpg" alt="" />
+          <div class="content">
+            <i class="bi bi-balloon-heart"></i>
+            <div class="cont">
+              <h4>Dubai</h4>
+              <p>United Arab Emirates</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section>
+      <h2>Our Service</h2>
+      <div class="box">
+        <div class="img-bx">
+          <img src="img/317e7c5f5d69514a14d0168bdf266a7f.jpg" alt="" />
+        </div>
+        <div class="cont-bx">
+          <h6><span>OUR SERVICE</span></h6>
+          <h1>
+            Comfort is our <br />
+            Top Priority for You
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+            architecto dignissimos voluptatibus? Et omnis, voluptatem neque
+            asperiores magnam totam assumenda?
+          </p>
+          <ul>
+            <li>Premium national marketing</li>
+            <li>managed viewing</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Local area knowledge</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <i class="bi bi-house-door-fill"></i>
+    </footer>
     <script src="app.js"></script>
   </body>
 </html>
